@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+
+    <style type= "text/css">
+        body {
+            font-family: sans-serif;
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+        }
+
+        input [type=text] {
+            width: 400px;
+            font-size: 20px;
+            padding: 2px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 200px;
+            font-size: 17px;
+            font-family: serif;
+        }
+
+        input [type=submit] {
+            font-size: 34px;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        .blog_posts + .blog{
+            margin-top: 20px;
+        }
+
+        .blog-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .blog-body {
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        .post-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .post-body {
+            margin: 20px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mary's Blog</h1>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>
